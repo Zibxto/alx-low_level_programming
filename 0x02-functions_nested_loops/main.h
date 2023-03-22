@@ -27,4 +27,9 @@ int _islower(int c);
  */
 int _isalpha(int c);
 
+/**
+  * checks for the sign of a number and prints it
+  */
+int print_sign(int n);
+
 #endif
