@@ -42,7 +42,10 @@ int _abs(int);
  */
 int print_last_digit(int);
 
-
+/**
+  * prints every minute of the day
+ */
+void jack_bauer(void);
 
 
 
