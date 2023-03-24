@@ -48,4 +48,10 @@ void print_most_numbers(void);
  */
 void more_numbers(void);
 
+/**
+ * print_line - function to check
+ * Description: draws a straight line
+ */
+void print_line(int n);
+
 #endif
