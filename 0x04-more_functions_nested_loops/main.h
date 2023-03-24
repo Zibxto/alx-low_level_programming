@@ -4,7 +4,7 @@
 /**
  * _putchar - writes the character c to stdout
  * Return: On success 1.
- */  
+ */
 int _putchar(char c);
 
 
@@ -35,4 +35,11 @@ int mul(int a, int b);
  * Description: prints numbers from 0 - 9
  */
 void print_numbers(void);
+
+/**
+ * print_most_numbers - function to check
+ * Description: prints 0 - 9 excluding 2 and 4
+ */
+void print_most_numbers(void);
+
 #endif
