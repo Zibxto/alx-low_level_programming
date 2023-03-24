@@ -2,6 +2,13 @@
 #define _MAIN_H
 
 /**
+ * _putchar - writes the character c to stdout
+ * Return: On success 1.
+ */  
+int _putchar(char c);
+
+
+/**
  * _isupper - checks if a letter is uppercase or lowercase
  * @c: argument to check
  * Return: 1 if upper and 0 if otherwise
@@ -22,4 +29,10 @@ int _isdigit(int c);
   * Return: result
   */
 int mul(int a, int b);
+
+/**
+ * print_numbers - function to check
+ * Description: prints numbers from 0 - 9
+ */
+void print_numbers(void);
 #endif
