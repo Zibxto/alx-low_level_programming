@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * print_number - function to check
+ * print_numbers - function to check
  * Description: prints number from 0 - 9
  */
 
