@@ -1,1 +1,1 @@
-## This directory includ sloutions to more tasks on functions and nested loop
+## This directory include solutions to more tasks on functions and nested loop

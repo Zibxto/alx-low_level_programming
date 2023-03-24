@@ -8,4 +8,11 @@
  */
 int _isupper(int c);
 
+/**
+ * _isdigit - checks if an argument is a digit or not
+ * @c: integer argument to check
+ * Return: 1 if digit and 0 if otherwise
+ */
+int _isdigit(int c);
+
 #endif
