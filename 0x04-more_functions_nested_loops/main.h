@@ -71,4 +71,11 @@ void print_square(int size);
  * Description: prints a triangle
  */
 void print_triangle(int size);
+
+/**
+ * print_number - function to check
+ * Description: prints an integer
+ */
+
+void print_number(int n);
 #endif
