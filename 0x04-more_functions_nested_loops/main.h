@@ -42,4 +42,10 @@ void print_numbers(void);
  */
 void print_most_numbers(void);
 
+/**
+ * more_numbers - function to check
+ * Description: prints 10 times the number 0 - 14
+ */
+void more_numbers(void);
+
 #endif
