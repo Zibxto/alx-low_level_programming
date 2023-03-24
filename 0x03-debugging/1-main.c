@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
   * main - causes an infinite loop
-  * @'\\o/\n'": \o/
+  * '\\o/\n"': \o/
   * Return: 0
   */
 
@@ -19,6 +19,6 @@ int main(void)
  *		}
  */
 
-	printf("Infinite loop avoided! \\o/\n");
+	printf("Infinite loop avoided! \\o/\no");
 	return (0);
 }
