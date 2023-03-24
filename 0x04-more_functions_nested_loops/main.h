@@ -15,4 +15,11 @@ int _isupper(int c);
  */
 int _isdigit(int c);
 
+ /**
+  * mul - multiplies 2 integer arguments
+  * @a: integer argument
+  * @b: integer argument
+  * Return: result
+  */
+int mul(int a, int b);
 #endif
