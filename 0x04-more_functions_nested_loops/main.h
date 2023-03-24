@@ -60,4 +60,9 @@ void print_line(int n);
  */
 void print_diagonal(int n);
 
+/**
+ * print_square - function to check
+ * Description: prints a square
+ */
+void print_square(int size);
 #endif
