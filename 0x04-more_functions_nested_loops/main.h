@@ -65,4 +65,10 @@ void print_diagonal(int n);
  * Description: prints a square
  */
 void print_square(int size);
+
+/**
+ * print_triangle - function to check
+ * Description: prints a triangle
+ */
+void print_triangle(int size);
 #endif
