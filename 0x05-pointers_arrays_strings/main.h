@@ -48,4 +48,11 @@ void print_rev(char *s);
  * Return: void
  */
 void puts2(char *str);
+
+/**
+ * puts_half - function to check
+ * @str: param
+ * Return: void
+ */
+void puts_half(char *str);
 #endif
