@@ -8,4 +8,10 @@
  */
 void reset_to_98(int *n);
 
+/**
+ * swap_int - Swaps the value of two integers
+ * @a: int argument
+ * @b: int argument
+ */
+void swap_int(int *a, int *b);
 #endif
