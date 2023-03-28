@@ -25,7 +25,6 @@ void swap_int(int *a, int *b);
 /**
  * _strlen - returns the length of a string
  * @s: parameter
- * Return: void
  */
 int _strlen(char *s);
 
@@ -42,4 +41,11 @@ void _puts(char *str);
  * Return: void
  */
 void print_rev(char *s);
+
+/**
+ * puts2 - function to check
+ * @str: param
+ * Return: void
+ */
+void puts2(char *str);
 #endif
