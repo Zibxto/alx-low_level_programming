@@ -63,4 +63,12 @@ void puts_half(char *str);
  * Return: void
  */
 void print_array(int *a, int n);
+
+/**
+ * *_strcpy - function to check
+ * @dest: param
+ * @src: param
+ * Return: char value
+ */
+char *_strcpy(char *dest, char *src);
 #endif
