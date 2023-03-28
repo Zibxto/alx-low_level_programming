@@ -3,6 +3,7 @@
 
 /**
  * _putchar - writes the character c to stdout
+ * @c: param
  * Return: On success 1.
  */
 int _putchar(char c);
@@ -24,13 +25,21 @@ void swap_int(int *a, int *b);
 /**
  * _strlen - returns the length of a string
  * @s: parameter
+ * Return: void
  */
 int _strlen(char *s);
 
 /**
  * _puts - prints a string
- * @str - param
+ * @str: param
  * Return: void
  */
 void _puts(char *str);
+
+/**
+ * print_rev - function to check
+ * @s: param
+ * Return: void
+ */
+void print_rev(char *s);
 #endif
