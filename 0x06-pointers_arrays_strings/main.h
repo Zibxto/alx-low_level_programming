@@ -17,4 +17,12 @@ int _putchar(char c);
   */
 char *_strcat(char *dest, char *src);
 
+/**
+  * _strncat - function to check
+  * @dest: text1
+  * @src: text2
+  * @n: number of bytes of text2
+  * Return: concatenated string
+  */
+char *_strncat(char *dest, char *src, int n);
 #endif
