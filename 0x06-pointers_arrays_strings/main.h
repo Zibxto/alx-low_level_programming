@@ -25,4 +25,13 @@ char *_strcat(char *dest, char *src);
   * Return: concatenated string
   */
 char *_strncat(char *dest, char *src, int n);
+
+/**
+  * _strncat - function to check
+  * @dest: text1
+  * @src: text2
+  * @n: number of bytes of text2
+  * Return: new copy of string
+  */
+char *_strncpy(char *dest, char *src, int n);
 #endif
