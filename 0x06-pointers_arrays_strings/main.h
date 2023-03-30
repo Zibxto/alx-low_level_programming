@@ -64,4 +64,11 @@ char *string_toupper(char *s);
   * Return: char value
   */
 char *cap_string(char *s);
+
+/**
+  * leet - function to check
+  * @s: param
+  * Return: char value
+  */
+char *leet(char *s);
 #endif
