@@ -34,4 +34,12 @@ char *_strncat(char *dest, char *src, int n);
   * Return: new copy of string
   */
 char *_strncpy(char *dest, char *src, int n);
+
+/**
+  * _strcmp - function to check
+  * @s1: string 1
+  * @s2: string 2
+  * Return: int value
+  */
+int _strcmp(char *s1, char *s2);
 #endif
