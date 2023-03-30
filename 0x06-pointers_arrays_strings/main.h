@@ -53,8 +53,15 @@ void reverse_array(int *a, int n);
 
 /**
   * string_toupper - function to check
+  * @s: param
   * Return: char value
   */
 char *string_toupper(char *s);
 
+/**
+  * cap_string - function to check
+  * @s: param
+  * Return: char value
+  */
+char *cap_string(char *s);
 #endif
