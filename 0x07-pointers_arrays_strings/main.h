@@ -51,4 +51,13 @@ unsigned int _strspn(char *s, char *accept);
  * Return: pointer to the byte in s that matches one of the bytes in accept
  */
 char *_strpbrk(char *s, char *accept);
+
+/**
+ * _strstr - locates a substring
+ * @haystack: param
+ * @needle: param
+ * Return: result
+ */
+char *_strstr(char *haystack, char *needle);
+
 #endif
