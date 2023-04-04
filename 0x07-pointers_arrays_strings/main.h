@@ -34,4 +34,13 @@ char *_memcpy(char *dest, char *src, unsigned int n);
  */
 char *_strchr(char *s, char c);
 
+
+/**
+ * _strspn - gets the length of a prefix substring
+ * @s: string to check
+ * @accept: character length to be checked
+ * Return: number of bytes in the initial segment of s
+ */
+unsigned int _strspn(char *s, char *accept);
+
 #endif
