@@ -21,6 +21,9 @@ int main(int argc, char *argv[])
 		printf("%s\n", "Error");
 	}
 
+	else
+	{
+
 
 	for (i = 1; i < argc; i++)
 	{
@@ -29,6 +32,7 @@ int main(int argc, char *argv[])
 	}
 
 		printf("%d\n", mul);
+	}
 	return (0);
 
 
