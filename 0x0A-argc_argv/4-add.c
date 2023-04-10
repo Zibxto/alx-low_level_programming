@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <ctype.h>
+
 /**
   * main - Entry point
   * @argc: number of arguments passed to program
@@ -16,7 +17,7 @@ int main(int argc, char *argv[])
 
 	if (argc == 1)
 	{
-		printf("0\n");
+		printf("%d\n", 0);
 	}
 	else
 	{
