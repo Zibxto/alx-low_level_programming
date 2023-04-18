@@ -5,7 +5,7 @@
  * @d: pointer to variable
  * @name: pointer to string value
  * @age: param age
- * owner: pointer to string value
+ * @owner: pointer to string value
  * Return: void
  */
 
