@@ -9,7 +9,6 @@
  * @age: age of new dog
  * @owner: owner of dog
  * Return: dog_t a type of struct
- * 
  */
 
 
@@ -19,12 +18,12 @@ dog_t *new_dog(char *name, float age, char *owner)
 	dog_t *dog;
 
 	dog = malloc(sizeof(dog_t));
-	
+
 	if (dog == NULL)
 		return (NULL);
 
 	dog->name = strdup(name);
-	
+
 	if (dog->name == NULL)
 	{
 		free(dog);
@@ -32,7 +31,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 	}
 
 	dog->owner = strdup(owner);
-	
+
 	if (dog->owner == NULL)
 	{
 		free(dog->name);
