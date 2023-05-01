@@ -20,7 +20,7 @@ int _strlen(const char *string)
 
 
 /**
- * add_node - adds a node to the beginning of the list
+ * add_node_end - adds a node to the beginning of the list
  * @head: pointer to a pointer param
  * @str: data to be added in the new node
  * Return: address of new element
@@ -30,23 +30,29 @@ list_t *add_node_end(list_t **head, const char *str)
 {
 	list_t *ptr, *tmp;
 
-	ptr = *head;
+	if (str == NULL)
+		return (NULL);
+	if (strdup(str) == NULL)
+		return (NULL);
 
-	if (ptr != NULL)
+	ptr = malloc(sizeof(list_t));
+	if (ptr == NULL)
+		return (NULL);
+
+	ptr->str = strdup(str);
+	ptr->len = _strlen(str);
+	ptr->next = NULL;
+
+	if (*head == NULL)
+		*head = ptr;
+	else
 	{
-	tmp = malloc(sizeof(list_t));
+		tmp = *head;
 
-	tmp->str = strdup(str);
-	tmp->len = _strlen(str);
-	tmp->next = NULL;
-
-	while(ptr->next != NULL)
-	{
-		ptr = ptr->next;
+		while (tmp->next != NULL)
+			tmp = tmp->next;
+		tmp->next = ptr;
 	}
-	ptr->next = tmp;
 
 	return (tmp);
-	}
-	return (NULL);
 }
