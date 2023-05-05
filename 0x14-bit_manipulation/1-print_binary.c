@@ -9,7 +9,19 @@
 
 void print_binary(unsigned long int n)
 {
+	unsigned long int ncopy = n;
+
 	int len = 0;
+
+	if (n == 0)
+		_putchar('0');
+
+	while (ncopy > 0)
+	{
+		len++;
+		ncopy >>= 1;
+	}
+	len -= 1;
 
 	while (len >= 0)
 	{
