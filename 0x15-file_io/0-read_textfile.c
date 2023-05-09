@@ -40,7 +40,6 @@ ssize_t read_textfile(const char *filename, size_t letters)
 		return (0);
 	}
 
-
 	nw = write(STDOUT_FILENO, buff, nr);
 
 	if (nw == -1)
@@ -49,8 +48,6 @@ ssize_t read_textfile(const char *filename, size_t letters)
 		close(fd);
 		return (0);
 	}
-
 	close(fd);
 	return (nr);
-
 }
