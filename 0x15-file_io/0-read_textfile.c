@@ -14,31 +14,36 @@ ssize_t read_textfile(const char *filename, size_t letters)
 
 	int fd;
 
-	int n;
-
-	ssize_t i = 0;
+	ssize_t nr, nw;
 
 	char buff[1024];
 
 	if (filename == NULL)
 		return (0);
 
-	fd = open(filename, O_RDWR);
+	fd = open(filename, O_RDONLY);
 
-	n = read(fd, buff, letters);
+	if (fd == -1)
+		return (0);
 
-	while (buff[i] != '\0')
+	nr = read(fd, buff, letters);
+
+	if (nr == -1)
 	{
-		printf("%c", buff[i]);
-		i++;
-	}
-
-	if (n == -1)
-	{
+		close(fd);
 		return (0);
 	}
 
 
-	return (i);
+	nw = write(STDOUT_FILENO, buff, nr);
+
+	if (nw == -1)
+	{
+		close(fd);
+		return (0);
+	}
+
+	close(fd);
+	return (nr);
 
 }
