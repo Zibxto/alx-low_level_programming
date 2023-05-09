@@ -14,6 +14,8 @@ int append_text_to_file(const char *filename, char *text_content)
 
 	int len = 0;
 
+	int n;
+
 	if (filename == NULL)
 		return (-1);
 
@@ -33,8 +35,9 @@ int append_text_to_file(const char *filename, char *text_content)
 		len++;
 	}
 
-	write(fd, text_content, len);
-
+	n = write(fd, text_content, len);
+	if (n == -1)
+		return (-1);
 
 	close(fd);
 	return (1);
