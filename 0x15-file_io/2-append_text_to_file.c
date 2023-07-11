@@ -26,7 +26,8 @@ int append_text_to_file(const char *filename, char *text_content)
 
 	if (!text_content)
 	{
-		;
+		close(fd);
+		return (1);
 	}
 
 	while (text_content[len] != '\0')
@@ -36,8 +37,11 @@ int append_text_to_file(const char *filename, char *text_content)
 	}
 
 	n = write(fd, text_content, len);
-	if (n == -1)
+	if (n == -1 || n != len)
+	{
+		close(fd);
 		return (-1);
+	}
 
 	close(fd);
 	return (1);
