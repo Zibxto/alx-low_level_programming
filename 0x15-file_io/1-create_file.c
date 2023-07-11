@@ -17,6 +17,7 @@ int create_file(const char *filename, char *text_content)
 
 	int len = 0;
 
+
 	if (filename == NULL)
 		return (-1);
 
@@ -33,15 +34,18 @@ int create_file(const char *filename, char *text_content)
 
 	/* get the length of text_content*/
 
-	while (text_content[0] != '\0')
+	while (text_content[len] != '\0')
 	{
 		;
 		len++;
 	}
 
 	n = write(fd, text_content, len);
-	if (n == -1)
+	if (n == -1 || n != len)
+	{
+		close(fd);
 		return (-1);
+	}
 
 	close(fd);
 	return (1);
